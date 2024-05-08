@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="32dp"
+    android:background="@color/blue_background">
+
+
+    <ImageView
+        android:id="@+id/myImageView"
+        android:layout_width="84dp"
+        android:layout_height="81dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:contentDescription="@string/aadhaar_logo"
+        android:src="@drawable/aadhaar_logo"
+        tools:layout_editor_absoluteX="268dp"
+        tools:layout_editor_absoluteY="-4dp" />
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="86dp"
+        android:contentDescription="@string/iitb"
+        android:src="@drawable/iitb"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-2dp" />
+
+
+    <ImageView
+        android:layout_width="69dp"
+        android:layout_height="65dp"
+        android:contentDescription="@string/fingerprint"
+        android:src="@drawable/fingerprint"
+        tools:layout_editor_absoluteX="144dp"
+        tools:layout_editor_absoluteY="274dp" />
+
+    <TextView
+        android:id="@+id/biomatchTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="BioMatch"
+        android:textColor="#FFFFFF"
+        android:textSize="27sp"
+        tools:layout_editor_absoluteX="112dp"
+        tools:layout_editor_absoluteY="371dp" />
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/login"
+        android:background="@color/black"
+        android:textColor="@android:color/white"
+        tools:layout_editor_absoluteX="32dp"
+        tools:layout_editor_absoluteY="435dp" />
+
+    <Button
+        android:id="@+id/registerButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/register"
+        android:background="@color/black"
+        tools:layout_editor_absoluteX="32dp"
+        tools:layout_editor_absoluteY="504dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

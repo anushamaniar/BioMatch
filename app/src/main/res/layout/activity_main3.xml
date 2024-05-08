@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="812dp"
+    android:background="@drawable/drawable_shape">
+
+    <ImageView
+        android:id="@+id/image_dialog_box"
+        android:layout_width="match_parent"
+        android:layout_height="729dp"
+        android:layout_gravity="top|left"
+        android:background="@drawable/image_dialog_box"
+        android:scaleType="centerInside" />
+
+    <LinearLayout
+        android:id="@+id/container_dialog_box"
+        android:layout_width="328dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="238dp"
+        android:layout_gravity="top|left"
+        android:background="@drawable/container_dialog_box"
+        android:gravity="left|top"
+        android:orientation="vertical"
+        android:paddingBottom="32dp"
+        android:paddingLeft="32dp"
+        android:paddingRight="32dp"
+        android:paddingTop="32dp">
+
+        <TextView
+            android:id="@+id/text_dialog_header"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="left|center_vertical"
+            android:includeFontPadding="false"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="Person found: Person X"
+            android:textColor="#FF1E232C"
+            android:textSize="22dp" />
+
+        <TextView
+            android:id="@+id/text_accuracy_percentage"
+            android:layout_width="match_parent"
+            android:layout_height="26dp"
+            android:layout_marginTop="16dp"
+            android:gravity="left|center_vertical"
+            android:includeFontPadding="false"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="Accuracy: 89.341%"
+            android:textColor="#FF1E232C"
+            android:textSize="18dp" />
+
+        <LinearLayout
+            android:id="@+id/container_button_row"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="right|top"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/container_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/container_button"
+                android:clipToPadding="false"
+                android:gravity="left|top"
+                android:orientation="horizontal"
+                android:paddingBottom="9dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="9dp">
+
+                <TextView
+                    android:id="@+id/text_button_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="26dp"
+                    android:gravity="left|center_vertical"
+                    android:includeFontPadding="false"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:text="Back "
+                    android:textColor="#FFDEDAD5"
+                    android:textSize="18dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>
